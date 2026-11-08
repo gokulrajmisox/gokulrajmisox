@@ -1,0 +1,79 @@
+<svg width="1600" height="430" viewBox="0 0 1600 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Gokulraj K G engineering motion system</title>
+  <desc id="desc">Animated dark interface showing signals moving between AI security, agent tooling, full-stack systems and open-source infrastructure.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07090B"/>
+      <stop offset="0.55" stop-color="#0C1712"/>
+      <stop offset="1" stop-color="#07110C"/>
+    </linearGradient>
+    <linearGradient id="line" x1="120" y1="215" x2="1480" y2="215" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2BD47D" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#6EE7A8"/>
+      <stop offset="1" stop-color="#2BD47D" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#6EE7A8" stroke-opacity=".06"/>
+    </pattern>
+    <path id="routeA" d="M245 220 C430 80 540 90 720 215 S1050 350 1350 210"/>
+    <path id="routeB" d="M245 220 C470 360 575 335 720 215 S1030 85 1350 210"/>
+  </defs>
+  <rect width="1600" height="430" rx="22" fill="url(#bg)"/>
+  <rect width="1600" height="430" rx="22" fill="url(#grid)"/>
+  <path d="M80 215H1520" stroke="url(#line)" stroke-width="1"/>
+  <path d="M245 220 C430 80 540 90 720 215 S1050 350 1350 210" stroke="#2BD47D" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M245 220 C470 360 575 335 720 215 S1030 85 1350 210" stroke="#6EE7A8" stroke-opacity=".2" stroke-width="2"/>
+
+  <g font-family="Inter,Segoe UI,sans-serif">
+    <text x="80" y="74" fill="#6EE7A8" font-size="16" font-weight="700" letter-spacing="4">LIVE ENGINEERING LOOP</text>
+    <text x="80" y="112" fill="#F4FFF8" font-size="31" font-weight="700">Signals → decisions → systems</text>
+    <text x="80" y="143" fill="#9EAEA5" font-size="17">A creative view of what I keep building: safer AI, useful tools, durable infrastructure.</text>
+
+    <g transform="translate(152 177)">
+      <circle cx="93" cy="43" r="44" fill="#10231A" stroke="#2BD47D" stroke-opacity=".55"/>
+      <circle cx="93" cy="43" r="25" fill="#0B1711" stroke="#6EE7A8" stroke-opacity=".6"/>
+      <text x="93" y="48" text-anchor="middle" fill="#F4FFF8" font-size="16" font-weight="700">AI</text>
+      <text x="93" y="113" text-anchor="middle" fill="#BCEFD0" font-size="15">security</text>
+      <circle cx="93" cy="43" r="60" stroke="#6EE7A8" stroke-opacity=".35" stroke-dasharray="3 10">
+        <animateTransform attributeName="transform" type="rotate" from="0 93 43" to="360 93 43" dur="12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g transform="translate(625 174)">
+      <circle cx="95" cy="46" r="45" fill="#10231A" stroke="#2BD47D" stroke-opacity=".55"/>
+      <path d="M67 46H123M95 18V74" stroke="#6EE7A8" stroke-opacity=".7"/>
+      <circle cx="95" cy="46" r="15" fill="#2BD47D" filter="url(#glow)"/>
+      <text x="95" y="114" text-anchor="middle" fill="#BCEFD0" font-size="15">agent tools</text>
+      <circle cx="95" cy="46" r="61" stroke="#6EE7A8" stroke-opacity=".35" stroke-dasharray="3 10">
+        <animateTransform attributeName="transform" type="rotate" from="360 95 46" to="0 95 46" dur="10s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g transform="translate(1250 176)">
+      <circle cx="95" cy="43" r="44" fill="#10231A" stroke="#2BD47D" stroke-opacity=".55"/>
+      <path d="M69 31H121M69 45H121M69 59H121" stroke="#6EE7A8" stroke-width="3" stroke-linecap="round"/>
+      <text x="95" y="113" text-anchor="middle" fill="#BCEFD0" font-size="15">open source</text>
+      <circle cx="95" cy="43" r="60" stroke="#6EE7A8" stroke-opacity=".35" stroke-dasharray="3 10">
+        <animateTransform attributeName="transform" type="rotate" from="0 95 43" to="360 95 43" dur="14s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g fill="#6EE7A8" filter="url(#glow)">
+      <circle r="6"><animateMotion dur="4.8s" repeatCount="indefinite" rotate="auto"><mpath href="#routeA"/></animateMotion></circle>
+      <circle r="5"><animateMotion dur="4.8s" begin="1.6s" repeatCount="indefinite" rotate="auto"><mpath href="#routeA"/></animateMotion></circle>
+      <circle r="5"><animateMotion dur="5.7s" repeatCount="indefinite" rotate="auto"><mpath href="#routeB"/></animateMotion></circle>
+      <circle r="4"><animateMotion dur="5.7s" begin="2.2s" repeatCount="indefinite" rotate="auto"><mpath href="#routeB"/></animateMotion></circle>
+    </g>
+
+    <rect x="80" y="375" width="1440" height="1" fill="#6EE7A8" fill-opacity=".2"/>
+    <rect x="80" y="375" width="230" height="1" fill="#6EE7A8" opacity=".8">
+      <animate attributeName="x" values="80;1290;80" dur="7s" repeatCount="indefinite"/>
+    </rect>
+    <text x="80" y="405" fill="#7F9587" font-size="14" letter-spacing="2">BUILD · TEST · REVIEW · SHIP</text>
+    <text x="1520" y="405" text-anchor="end" fill="#6EE7A8" font-size="14" letter-spacing="2">SYSTEM STATUS: EXPLORING</text>
+  </g>
+</svg>

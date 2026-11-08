@@ -16,6 +16,10 @@
   <img src="./assets/gokulraj-skills-card.png" alt="Gokulraj K G's engineering toolkit with languages, application engineering, AI and machine learning, infrastructure and security, data and testing, and developer tooling" width="100%" />
 </p>
 
+<p align="center">
+  <img src="./assets/engineering-motion.svg" alt="Animated engineering loop showing signals moving between AI security, agent tools, and open-source systems" width="100%" />
+</p>
+
 ## `whoami`
 
 <table>
@@ -154,6 +158,10 @@ A high-fidelity 3D digital twin and telemetry OS with WebGL rendering, an explod
 - Building search, memory, and retrieval systems for AI tools
 - Deepening Rust, MCP integrations, Kubernetes storage, and ZFS knowledge
 - Improving evaluation loops for AI-assisted systems
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2200&pause=700&color=7F9587&center=true&vCenter=true&width=680&lines=observe+%E2%86%92+model+%E2%86%92+test+%E2%86%92+ship;security+is+a+feature%2C+not+a+decoration;make+the+system+explain+itself" alt="Animated engineering principles" />
+</p>
 
 ## `connect`
 
