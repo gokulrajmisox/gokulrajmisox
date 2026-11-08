@@ -1,118 +1,160 @@
-<div align="center">
-
-# Gokulraj K G
-
-**AI security · full-stack systems · open source**
-
-I build software that makes intelligent systems safer, more useful, and easier to operate — from browser and mobile privacy controls to AI-assisted developer tools, navigation systems, and storage infrastructure.
-
-[GitHub](https://github.com/gokulrajmisox) · [LinkedIn](https://www.linkedin.com/in/gokulraj-k-g/) · [Creative portfolio](https://www.instagram.com/goxzion/)
-
-</div>
-
 <p align="center">
-  <img src="./assets/gokulraj-skills-card.png" alt="Gokulraj K G's engineering toolkit: languages, application engineering, AI and machine learning, infrastructure and security, data and testing, and developer tooling." width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050807,48:10231a,100:2bd47d&height=230&section=header&text=Gokulraj%20K%20G&fontSize=58&fontColor=f4fff8&fontAlignY=36&desc=AI%20Security%20%E2%80%A2%20Full-Stack%20Systems%20%E2%80%A2%20Open%20Source&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Animated dark green header reading Gokulraj K G" />
 </p>
 
----
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=2800&pause=900&color=6EE7A8&center=true&vCenter=true&width=760&lines=Engineering+student+%7C+aspiring+software+engineer;Building+safer+AI+interactions;Full-stack+systems+with+real+engineering+depth;Exploring+agentic+AI+and+developer+tools;Learning+in+public%2C+shipping+in+code" alt="Animated typing text describing Gokulraj's engineering interests" />
+</p>
 
-## Current focus
+<p align="center">
+  <a href="https://github.com/gokulrajmisox"><img src="https://img.shields.io/badge/GitHub-07090B?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/gokulraj-k-g/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/goxzion/"><img src="https://img.shields.io/badge/Creative%20portfolio-8A3FFC?style=for-the-badge&logo=instagram&logoColor=white" alt="Creative portfolio" /></a>
+</p>
 
-- Building **AI security and privacy controls** that intervene at the point where sensitive data is about to leave a user's device.
-- Exploring **agentic AI**, developer tooling, and systems that make AI-assisted workflows more reliable.
-- Developing **full-stack products** with thoughtful security boundaries, reproducible tests, and practical deployment paths.
-- Contributing to **open-source infrastructure**, including design work around PVC-level ZFS volume-property overrides in OpenEBS.
+<p align="center">
+  <img src="./assets/gokulraj-skills-card.png" alt="Gokulraj K G's engineering toolkit with languages, application engineering, AI and machine learning, infrastructure and security, data and testing, and developer tooling" width="100%" />
+</p>
 
-I am a BE Computer Science and Engineering student at Knowledge Institute of Technology, Tamil Nadu, India, and an aspiring software engineer who prefers learning by shipping and reviewing real systems.
+## `whoami`
 
-## Featured engineering
+<table>
+<tr>
+<td width="56%" valign="top">
+
+```ts
+const gokulraj = {
+  role: [
+    "AI security builder",
+    "full-stack engineer in training",
+    "open-source contributor",
+  ],
+  basedIn: "Tamil Nadu, India",
+  education: "BE CSE @ Knowledge Institute of Technology",
+  buildsWith: ["JavaScript", "TypeScript", "Python", "Kotlin"],
+  explores: ["agentic AI", "privacy engineering", "systems"],
+  principle: "make useful systems safer to use",
+};
+```
+
+</td>
+<td width="44%" valign="top">
+
+### What I build
+
+- **Privacy controls for AI workflows** at the browser and keyboard boundary
+- **AI-assisted products** with practical fallback paths and explicit limits
+- **Full-stack systems** spanning UI, APIs, data, testing, and deployment
+- **Open-source infrastructure work** around Kubernetes storage and ZFS
+
+</td>
+</tr>
+</table>
+
+> **Build the feature. Measure the boundary. Document the limitation.**
+
+## `featured builds`
+
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### [GATEKEEP.AI](https://github.com/gokulrajmisox/GATEKEEP.AI)
 
-A browser-level privacy firewall for safer AI use. GATEKEEP.AI scans text locally at the browser interaction boundary before a prompt is submitted to supported AI websites, then explains, warns, or blocks when it detects sensitive content.
+A browser privacy firewall for safer AI use. It scans prompts locally before submission, detects PII and secrets, and warns or blocks with an explainable reason.
 
-The project combines a Chrome Manifest V3 extension, JavaScript ES modules, pattern-based PII and secret detection, optional on-device named-entity recognition with `@huggingface/transformers`, ONNX Runtime Web/WASM, Chrome Offscreen Documents, Shadow DOM UI isolation, and an esbuild-based build path. It deliberately has no project backend or telemetry service.
+`Manifest V3` `JavaScript` `ONNX Runtime` `Local NER` `Chrome Offscreen Documents`
 
-**Engineering depth:** the repository includes a threat model, evaluation notes, deterministic regression tests, benchmark scripts, CI, daily health checks, and a documented distinction between local prompt scanning and first-use model-asset downloads. It is a strong example of security-minded product engineering without overstating the guarantee: it reduces accidental disclosure but is not a complete enterprise DLP system.
+</td>
+<td width="50%" valign="top">
 
 ### [PrivacyFirewall](https://github.com/gokulrajmisox/PrivacyFirewall)
 
-An Android privacy keyboard and on-device DLP prototype that intercepts sensitive text before it reaches messaging or AI applications. The system combines deterministic regex detection for structured secrets and PII with a quantized BERT NER model executed locally through ONNX Runtime Mobile.
+An Android privacy keyboard that combines regex detection with quantized BERT NER to intercept sensitive text before it reaches messaging or AI apps.
 
-The implementation uses Kotlin, Jetpack Compose, `InputMethodService`, a pure-Kotlin WordPiece tokenizer, BIO entity parsing, Android DataStore preferences, and an approximately 106 MB model asset managed through Git LFS. Users can review findings and redact or override them through the keyboard-layer workflow.
+`Kotlin` `Jetpack Compose` `InputMethodService` `ONNX Runtime Mobile` `DataStore`
 
-**Engineering depth:** the interesting design decision is the interception boundary. A keyboard can protect multiple target apps without requiring an integration in each application, while the repository documents the limits of the approach and the need to verify offline behavior on the target device.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### [CampusAI / SmartCampus](https://github.com/gokulrajmisox/smartcampus)
 
-An inclusive campus-navigation copilot that combines natural-language assistance with graph-based route planning. Users can ask for directions, find facilities, view routes on an interactive map, and request accessibility-aware navigation.
+An inclusive campus-navigation copilot combining Gemini-assisted natural language with graph-based route planning and accessibility-aware paths.
 
-The stack includes Python, Streamlit, Google Gemini through the Google GenAI SDK, OpenStreetMap data, OSMnx, NetworkX, Folium, Streamlit-Folium, Docker, Render, and Pytest. Route planning is implemented with BFS, DFS, uniform-cost search, and A* variants, with local routing behavior retained when Gemini is unavailable.
+`Python` `Streamlit` `Gemini` `OSMnx` `NetworkX` `Docker`
 
-**Engineering depth:** this is more than a chat wrapper. The repository contains a route graph, role-aware assistance, accessibility metadata, map layers, deployment configuration, health checks, tests, and a judge-facing demonstration path.
+</td>
+<td width="50%" valign="top">
 
 ### [SilentWindow](https://github.com/gokulrajmisox/ews)
 
-A retrospective ICU early-warning research prototype focused on reducing alarm fatigue through trust-aware signal processing and persistent evidence. Its pipeline assesses signal credibility, builds patient-specific temporal features, applies an XGBoost model, and accumulates evidence through a `STABLE → WATCH → ALERT` state machine.
+A research prototype for reducing ICU alarm fatigue through trust-aware signals, patient-specific temporal features, XGBoost, and persistent evidence accumulation.
 
-The repository combines Python, FastAPI, XGBoost, a static dashboard, Docker, Render deployment, CI, calibration, replay evaluation, and documented research experiments. It is explicitly a research prototype, not a medical device or clinically validated decision system.
+`Python` `FastAPI` `XGBoost` `Evaluation` `Docker` `CI`
 
-**Engineering depth:** the project is notable for making its limitations visible. It documents proxy lead-time assumptions, held-out retrospective results, process-local state, missing production controls, and the difference between validation metrics and chronological replay metrics.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### [Library Book Management System](https://github.com/gokulrajmisox/library-management-system)
 
-A BE CSE data-structures capstone that pairs a Next.js/TypeScript/Tailwind frontend with a Python FastAPI backend. Its core library operations are backed by hand-written data-structure engines rather than framework-only CRUD.
+A data-structures capstone pairing a Next.js frontend with a FastAPI backend and hand-written hash table, BST, stack, queue, graph, linked-list, and sorting engines.
 
-The implementation includes a hash table with separate chaining, binary-search-tree title indexing, an undo stack, a FIFO waiting-list queue, an adjacency-list recommendation graph with BFS, linked-list activity logging, sorting visualizations, circulation workflows, CSV analytics, SQLAlchemy models, Docker Compose, and automated backend tests.
+`TypeScript` `Next.js` `FastAPI` `SQLAlchemy` `Data Structures` `Docker Compose`
 
-## Open-source work
+</td>
+<td width="50%" valign="top">
 
-### Proposal / design work
+### [OpenEBS design work](https://github.com/gokulrajmisox/openebs/tree/oep-677-pvc-zfs-overrides)
 
-- **OpenEBS — PVC-level ZFS volume-property overrides:** maintained a public fork and the branch [`oep-677-pvc-zfs-overrides`](https://github.com/gokulrajmisox/openebs/tree/oep-677-pvc-zfs-overrides). The branch includes the OEP commit [“docs: add OEP for PVC-level ZFS overrides”](https://github.com/gokulrajmisox/openebs/commit/77dbecc23c0c7a1b8ae788679d261706558b6257). This is presented as a proposal/design branch; I am not labeling it as an upstream-merged pull request because a corresponding upstream PR was not publicly verifiable during review.
+A public proposal branch exploring PVC-level ZFS volume-property overrides. Shown as design/proposal work, not as an upstream-merged PR.
 
-### Pull requests
+`Kubernetes` `OpenEBS` `LocalPV-ZFS` `OEP`
 
-- [wshobson/agents #785](https://github.com/wshobson/agents/pull/785) — **open**: include development dependencies in test targets.
-- [gokulrajmisox/GATEKEEP.AI #1](https://github.com/gokulrajmisox/GATEKEEP.AI/pull/1) — **closed**: gate the logger behind a debug flag and stop logging raw prompts/PII.
-- [gokulrajmisox/ews #1](https://github.com/gokulrajmisox/ews/pull/1) — **open**: pin a Python-3.10-compatible scikit-learn version to fix CI.
-- [Teyliu/PVZF-Translation #226](https://github.com/Teyliu/PVZF-Translation/pull/226) — **closed**: correct malformed localization JSON.
+</td>
+</tr>
+</table>
 
-Statuses above are intentionally shown as GitHub reports them. Closed is not treated as merged, and proposal work is not treated as production code.
+## `open-source signal`
 
-## Recognition
+- [OpenEBS proposal branch](https://github.com/gokulrajmisox/openebs/tree/oep-677-pvc-zfs-overrides) — PVC-level ZFS overrides design work.
+- [wshobson/agents #785](https://github.com/wshobson/agents/pull/785) — open PR to include development dependencies in test targets.
+- [GATEKEEP.AI #1](https://github.com/gokulrajmisox/GATEKEEP.AI/pull/1) — closed PR improving debug logging and preventing raw prompt/PII logging.
+- [ews #1](https://github.com/gokulrajmisox/ews/pull/1) — open PR pinning a Python-3.10-compatible scikit-learn version.
+- [PVZF-Translation #226](https://github.com/Teyliu/PVZF-Translation/pull/226) — closed PR correcting malformed localization JSON.
 
-- **GATEKEEP.AI:** reported by the project team as selected among 25 teams for a grand-final round. I am keeping the wording conservative because an official public event-results URL was not available during verification; add that source link before publishing if you want this recognition featured prominently.
+## `tech stack`
 
-## Technical toolkit
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,python,kotlin,react,nextjs,tailwind,html,css,nodejs,express,fastapi,android,docker,kubernetes,postgres,supabase,sqlite,git,github,githubactions,npm,gradle&perline=12&theme=dark" alt="Technology icons for JavaScript, TypeScript, Python, Kotlin, React, Next.js, Tailwind CSS, HTML, CSS, Node.js, Express, FastAPI, Android, Docker, Kubernetes, PostgreSQL, Supabase, SQLite, Git, GitHub, GitHub Actions, npm, and Gradle" />
+</p>
 
-**Languages**  
-JavaScript · TypeScript · Python · Kotlin
+<p align="center">
+  <img src="https://img.shields.io/badge/AI%20Security-101713?style=for-the-badge&logo=shield&logoColor=6EE7A8" alt="AI Security" />
+  <img src="https://img.shields.io/badge/Agentic%20AI-101713?style=for-the-badge&logo=robotframework&logoColor=6EE7A8" alt="Agentic AI" />
+  <img src="https://img.shields.io/badge/ONNX%20Runtime-101713?style=for-the-badge&logo=onnx&logoColor=6EE7A8" alt="ONNX Runtime" />
+  <img src="https://img.shields.io/badge/NetworkX%20%2B%20OSMnx-101713?style=for-the-badge&logo=graphene&logoColor=6EE7A8" alt="NetworkX and OSMnx" />
+  <img src="https://img.shields.io/badge/Threat%20Modeling-101713?style=for-the-badge&logo=owasp&logoColor=6EE7A8" alt="Threat modeling" />
+</p>
 
-**Frontend and application engineering**  
-React · Next.js · Streamlit · Jetpack Compose · Tailwind CSS · FastAPI · Express · Chrome Extensions · Android `InputMethodService`
+## `now learning`
 
-**AI / ML**  
-Agentic AI workflows · Gemini integration · on-device NER · BERT tokenization · ONNX Runtime · XGBoost · model evaluation · calibration · privacy-preserving inference boundaries
+- Designing safer agentic workflows and runtime policy boundaries
+- Building stronger evaluation loops for AI-assisted systems
+- Deepening Kubernetes storage, ZFS, and systems engineering knowledge
+- Contributing more fixes and design proposals upstream
 
-**Infrastructure and systems**  
-Docker · Render · GitHub Actions · Kubernetes storage concepts · OpenEBS · ZFS / LocalPV design work · CI reliability · threat modeling
+## `connect`
 
-**Data and developer tools**  
-PostgreSQL / Supabase · SQLite · SQLAlchemy · NetworkX · OSMnx · OpenStreetMap · Pytest · npm · Gradle · Git LFS · GitHub
+<p align="center">
+  <a href="https://github.com/gokulrajmisox"><img src="https://img.shields.io/badge/Explore%20my%20code-07090B?style=for-the-badge&logo=github&logoColor=white" alt="Explore my code" /></a>
+  <a href="https://www.linkedin.com/in/gokulraj-k-g/"><img src="https://img.shields.io/badge/Let's%20connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Let's connect on LinkedIn" /></a>
+  <a href="https://www.instagram.com/goxzion/"><img src="https://img.shields.io/badge/See%20the%20creative%20side-8A3FFC?style=for-the-badge&logo=instagram&logoColor=white" alt="See the creative portfolio" /></a>
+</p>
 
-## Selected repositories
-
-- [GATEKEEP.AI](https://github.com/gokulrajmisox/GATEKEEP.AI) — browser privacy firewall for AI interactions
-- [PrivacyFirewall](https://github.com/gokulrajmisox/PrivacyFirewall) — Android keyboard-layer privacy protection
-- [CampusAI / SmartCampus](https://github.com/gokulrajmisox/smartcampus) — AI-assisted accessible campus navigation
-- [SilentWindow](https://github.com/gokulrajmisox/ews) — trust-aware ICU early-warning research prototype
-- [Library Book Management System](https://github.com/gokulrajmisox/library-management-system) — data-structures-driven full-stack capstone
-
-## Connect
-
-If you are working on AI security, developer tools, open-source infrastructure, or practical full-stack systems, I would be glad to connect.
-
-- [GitHub](https://github.com/gokulrajmisox)
-- [LinkedIn](https://www.linkedin.com/in/gokulraj-k-g/)
-- [Creative portfolio / Instagram](https://www.instagram.com/goxzion/)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2bd47d,55:10231a,100:050807&height=120&section=footer" width="100%" alt="Animated dark green footer" />
+</p>
