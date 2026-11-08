@@ -73,10 +73,10 @@ The implementation includes a hash table with separate chaining, binary-search-t
 
 ### Pull requests
 
-- [wshobson/agents #785](https://github.com/wshobson/agents/pull/785) — **open**: include development dependencies in test targets.
-- [gokulrajmisox/GATEKEEP.AI #1](https://github.com/gokulrajmisox/GATEKEEP.AI/pull/1) — **closed**: gate the logger behind a debug flag and stop logging raw prompts/PII.
+- [wshobson/agents #785](https://github.com/wshobson/agents/pull/785) — **merged**: include development dependencies in test targets.
+- [gokulrajmisox/GATEKEEP.AI #1](https://github.com/gokulrajmisox/GATEKEEP.AI/pull/1) — **merged**: gate the logger behind a debug flag and stop logging raw prompts/PII.
 - [gokulrajmisox/ews #1](https://github.com/gokulrajmisox/ews/pull/1) — **open**: pin a Python-3.10-compatible scikit-learn version to fix CI.
-- [Teyliu/PVZF-Translation #226](https://github.com/Teyliu/PVZF-Translation/pull/226) — **closed**: correct malformed localization JSON.
+- [Teyliu/PVZF-Translation #226](https://github.com/Teyliu/PVZF-Translation/pull/226) — **merged**: correct malformed localization JSON.
 
 Statuses above are intentionally shown as GitHub reports them. Closed is not treated as merged, and proposal work is not treated as production code.
 
@@ -108,6 +108,8 @@ PostgreSQL / Supabase · SQLite · SQLAlchemy · NetworkX · OSMnx · OpenStreet
 - [CampusAI / SmartCampus](https://github.com/gokulrajmisox/smartcampus) — AI-assisted accessible campus navigation
 - [SilentWindow](https://github.com/gokulrajmisox/ews) — trust-aware ICU early-warning research prototype
 - [Library Book Management System](https://github.com/gokulrajmisox/library-management-system) — data-structures-driven full-stack capstone
+- [Tgl](https://github.com/gokulrajmisox/Tgl) — edtech platform (Learn. Build. Grow.) — Next.js + Supabase Auth, dashboards, internships, projects, certificates
+- [foodbridge](https://github.com/gokulrajmisox/foodbridge) — food donation platform connecting donors, volunteers and receivers — React + Supabase
 
 ## Connect
 
