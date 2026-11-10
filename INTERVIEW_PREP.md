@@ -116,7 +116,7 @@ with disjointness asserts (no patient in two splits); past-only features
 (`extract_patient_features_at_time` filters `time <= T` with a raising
 assert; baselines capped at `min(6h, current_time)`); replay reveals only
 `t <= T` per step with an assert; and outcome-adjacent metadata (`sofa`,
-`saps`,`length_of_stay`, `survival`) is excluded from `feature_cols`.
+`saps`, `length_of_stay`, `survival`) is excluded from `feature_cols`.
 Calibration (Platt sigmoid) is fit on the validation split only, and tuning
 is validation-only.
 
