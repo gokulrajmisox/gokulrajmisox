@@ -58,7 +58,8 @@ to the console. How did you find and fix that?** `[main]`
 The `Logger` in `modules/utils.js` was completely ungated: `info`/`warn`/
 `error` called `console.log` unconditionally. `scanner.js` `scanWithAI`
 logged the full raw prompt text on every AI scan, and
-`lib/transformer-detector.js` logged the actual detected entity values (realnames, orgs, locations). The fix (PR #1, merged): a `debug` setting defaulting
+`lib/transformer-detector.js` logged the actual detected entity values (real
+names, orgs, locations). The fix (PR #1, merged): a `debug` setting defaulting
 to `false`, `Logger` no-ops unless debugging is on, logs carry lengths/counts/
 types only, and `Logger.error` still logs but redacts finding `value` fields
 and truncates strings over 300 chars. Verified by the repo's own suite
@@ -114,7 +115,8 @@ Four independent checks, all in code: patient-level stratified seeded splits
 with disjointness asserts (no patient in two splits); past-only features
 (`extract_patient_features_at_time` filters `time <= T` with a raising
 assert; baselines capped at `min(6h, current_time)`); replay reveals only
-`t <= T` per step with an assert; and outcome-adjacent metadata (`sofa`,`saps`, `length_of_stay`, `survival`) is excluded from `feature_cols`.
+`t <= T` per step with an assert; and outcome-adjacent metadata (`sofa`,
+`saps`,`length_of_stay`, `survival`) is excluded from `feature_cols`.
 Calibration (Platt sigmoid) is fit on the validation split only, and tuning
 is validation-only.
 
@@ -228,7 +230,8 @@ migration changes nothing live.
 path: `/admin` requires admin, `/mentor` requires any non-student role. That
 is only the first layer — each role home re-verifies server-side with
 `getSession()` and redirects unauthenticated users to `/login`. `getRole()`
-defaults unknown, missing, or errored roles to `student` (fail-closed: aprivileged user whose profile read fails lands on access-denied, not on a
+defaults unknown, missing, or errored roles to `student` (fail-closed: a
+privileged user whose profile read fails lands on access-denied, not on a
 privileged page). Redirects go through `safeNext()`, which accepts only
 same-origin absolute paths, so there is no open-redirect hole via `?next=`.
 
@@ -284,7 +287,8 @@ but it is not yet committed. The honest answer is that the fix is tested,
 not shipped.
 
 **Q28. Your README says one thing and your code another. Give an example.**
-Two: the documented profile-read policy allows reading only your own row,but the Claims page fetches donor profiles to render a WhatsApp link and the
+Two: the documented profile-read policy allows reading only your own row,
+but the Claims page fetches donor profiles to render a WhatsApp link and the
 Dashboard leaderboard joins donor names — under the documented policy both
 return null. And the `/transparency` route is advertised as public without
 logging in, but the listings select policy requires an authenticated user.
